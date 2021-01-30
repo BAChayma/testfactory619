@@ -1,0 +1,43 @@
+body {
+    font-family: Lato;
+  }
+  
+  table {
+    border:collapse;
+  }
+  .normal td { 
+    font-size:20px;
+    font-family: monospace;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding:8px;
+  }
+  .truchet td, .truchet tr { 
+    padding:0;
+    margin:0;
+    border:0;
+    display: flex;
+  }
+  .truchet td {
+    width: 48px;
+    height: 48px;
+    max-height: 48px;
+    max-width: 48px;
+  }
+  .active {
+    background-color: bisque;
+  }
+  
+  h2 {
+    page-break-before: always;
+  }
+  
+  @media print
+  {    
+      .hiddenPrint
+      {
+          display: none !important;
+      }
+      @page {size: landscape}
+  }
+  
